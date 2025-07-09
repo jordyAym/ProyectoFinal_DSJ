@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\windows\\Desktop\\proyectoCompuG\\ProyectoFinal_CG\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7CFC2F9E-19D7-18F8-A053-684FF58065C7}|Assembly-CSharp.csproj|c:\\users\\windows\\desktop\\proyectocompug\\proyectofinal_cg\\assets\\scripts\\galaxymap scripts\\optionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7CFC2F9E-19D7-18F8-A053-684FF58065C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\galaxymap scripts\\optionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7CFC2F9E-19D7-18F8-A053-684FF58065C7}|Assembly-CSharp.csproj|C:\\Users\\windows\\Desktop\\proyectoCompuG\\ProyectoFinal_CG\\assets\\scripts\\galaxymap scripts\\changefocus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7CFC2F9E-19D7-18F8-A053-684FF58065C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\galaxymap scripts\\changefocus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7CFC2F9E-19D7-18F8-A053-684FF58065C7}|Assembly-CSharp.csproj|C:\\Users\\windows\\Desktop\\proyectoCompuG\\ProyectoFinal_CG\\assets\\scripts\\galaxymap scripts\\rotate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7CFC2F9E-19D7-18F8-A053-684FF58065C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\galaxymap scripts\\rotate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7CFC2F9E-19D7-18F8-A053-684FF58065C7}|Assembly-CSharp.csproj|c:\\users\\windows\\desktop\\proyectocompug\\proyectofinal_cg\\assets\\scripts\\galaxymap scripts\\optionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CFC2F9E-19D7-18F8-A053-684FF58065C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\galaxymap scripts\\optionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7CFC2F9E-19D7-18F8-A053-684FF58065C7}|Assembly-CSharp.csproj|C:\\Users\\windows\\Desktop\\proyectoCompuG\\ProyectoFinal_CG\\assets\\scripts\\galaxymap scripts\\focus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7CFC2F9E-19D7-18F8-A053-684FF58065C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\galaxymap scripts\\focus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CFC2F9E-19D7-18F8-A053-684FF58065C7}|Assembly-CSharp.csproj|C:\\Users\\windows\\Desktop\\proyectoCompuG\\ProyectoFinal_CG\\assets\\scripts\\galaxymap scripts\\rotate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CFC2F9E-19D7-18F8-A053-684FF58065C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\galaxymap scripts\\rotate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,6 +31,20 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ChangeFocus.cs",
+              "DocumentMoniker": "C:\\Users\\windows\\Desktop\\proyectoCompuG\\ProyectoFinal_CG\\Assets\\Scripts\\GalaxyMap Scripts\\ChangeFocus.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GalaxyMap Scripts\\ChangeFocus.cs",
+              "ToolTip": "C:\\Users\\windows\\Desktop\\proyectoCompuG\\ProyectoFinal_CG\\Assets\\Scripts\\GalaxyMap Scripts\\ChangeFocus.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GalaxyMap Scripts\\ChangeFocus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T14:47:25.004Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "OptionsController.cs",
               "DocumentMoniker": "C:\\Users\\windows\\Desktop\\proyectoCompuG\\ProyectoFinal_CG\\Assets\\Scripts\\GalaxyMap Scripts\\OptionsController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GalaxyMap Scripts\\OptionsController.cs",
@@ -43,19 +57,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ChangeFocus.cs",
-              "DocumentMoniker": "C:\\Users\\windows\\Desktop\\proyectoCompuG\\ProyectoFinal_CG\\Assets\\Scripts\\GalaxyMap Scripts\\ChangeFocus.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\GalaxyMap Scripts\\ChangeFocus.cs",
-              "ToolTip": "C:\\Users\\windows\\Desktop\\proyectoCompuG\\ProyectoFinal_CG\\Assets\\Scripts\\GalaxyMap Scripts\\ChangeFocus.cs",
-              "RelativeToolTip": "Assets\\Scripts\\GalaxyMap Scripts\\ChangeFocus.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T14:47:25.004Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Focus.cs",
               "DocumentMoniker": "C:\\Users\\windows\\Desktop\\proyectoCompuG\\ProyectoFinal_CG\\Assets\\Scripts\\GalaxyMap Scripts\\Focus.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GalaxyMap Scripts\\Focus.cs",
@@ -63,19 +65,21 @@
               "RelativeToolTip": "Assets\\Scripts\\GalaxyMap Scripts\\Focus.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T14:42:10.8Z"
+              "WhenOpened": "2025-07-09T14:42:10.8Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Rotate.cs",
               "DocumentMoniker": "C:\\Users\\windows\\Desktop\\proyectoCompuG\\ProyectoFinal_CG\\Assets\\Scripts\\GalaxyMap Scripts\\Rotate.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GalaxyMap Scripts\\Rotate.cs",
               "ToolTip": "C:\\Users\\windows\\Desktop\\proyectoCompuG\\ProyectoFinal_CG\\Assets\\Scripts\\GalaxyMap Scripts\\Rotate.cs",
               "RelativeToolTip": "Assets\\Scripts\\GalaxyMap Scripts\\Rotate.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-08T04:01:48.823Z"
+              "WhenOpened": "2025-07-08T04:01:48.823Z",
+              "EditorCaption": ""
             }
           ]
         }

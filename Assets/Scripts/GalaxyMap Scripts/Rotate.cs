@@ -9,6 +9,6 @@ public class Rotate : MonoBehaviour
 
     void Update()
     {
-        transform.RotateAround(target.transform.position, target.transform.up, speed * Time.deltaTime);
+        transform.RotateAround(target.transform.position, Vector3.up, speed * Time.deltaTime);
     }
 }

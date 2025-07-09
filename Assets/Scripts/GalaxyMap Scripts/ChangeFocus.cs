@@ -9,6 +9,6 @@ public class ChangeFocus : MonoBehaviour
     private void OnMouseDown()
     {
         Focus.target = target;
-        Camera.main.fieldOfView = Mathf.Clamp(60 * target.transform.localScale.x, 1, 100);
+        Camera.main.fieldOfView = Mathf.Clamp(1 * target.transform.localScale.x, 1, 100);
     }
 }
