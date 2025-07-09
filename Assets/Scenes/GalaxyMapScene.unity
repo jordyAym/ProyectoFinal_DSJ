@@ -578,6 +578,7 @@ GameObject:
   - component: {fileID: 1561592708}
   - component: {fileID: 1561592712}
   - component: {fileID: 1561592713}
+  - component: {fileID: 1561592714}
   m_Layer: 0
   m_Name: Jupiter
   m_TagString: Untagged
@@ -699,6 +700,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 720141200}
   speed: 30
+--- !u!114 &1561592714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1561592707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e00cd5e05fc93584e80a9f5cb800e2f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1561592707}
 --- !u!1 &1620297399
 GameObject:
   m_ObjectHideFlags: 0
