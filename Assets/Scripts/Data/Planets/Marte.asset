@@ -14,6 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   planetName: Marte
   gravity: 7
+  averageTemperature: 20
+  dayLength: 10
+  atmosphereStatus: 3
+  radiationLevel: 100
   skybox: {fileID: 0}
   fogColor: {r: 0.9547169, g: 0.27920952, b: 0.27920952, a: 0}
   ambientAudio: {fileID: 0}
+  keyFact: "Este planeta tiene una atm\xF3sfera tenue compuesta principalmente de
+    CO2"

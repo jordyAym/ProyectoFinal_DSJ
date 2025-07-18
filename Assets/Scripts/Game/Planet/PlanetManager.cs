@@ -1,76 +1,83 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿// Assets/Scripts/Game/Managers/PlanetManager.cs
 using UnityEngine;
+using System.Collections;
 
-// Controla la configuración ambiental de un planeta
+[RequireComponent(typeof(AudioSource))]
 public class PlanetManager : MonoBehaviour
 {
-    // ScriptableObject con los datos del planeta
+    [Header("Datos del Planeta")]
     public PlanetData data;
 
-    void Start()
+    [Header("Referencias UI")]
+    public UIManager uiManager;
+
+    // Unity detecta esto como coroutine si devuelve IEnumerator
+    private IEnumerator Start()
     {
-        if (data != null)
-        {
-            ApplySettings();
-        }
-        else
+        if (data == null)
         {
             Debug.LogWarning("PlanetManager: No se asignó un PlanetData.");
+            yield break;
         }
+
+        ApplyEnvironmentSettings();
+        uiManager.InitPlanet(data);
+
+        // 1) Popup de bienvenida
+        uiManager.ShowPopup($"¡Bienvenido a {data.planetName}!");
+
+        // 2) Esperamos el ciclo completo de fade-in + display + fade-out (por defecto 0.5 + 3 + 0.5 = 4s)
+        yield return new WaitForSeconds(4f);
+
+        // 3) Popup del dato relevante (si existe)
+        if (!string.IsNullOrWhiteSpace(data.keyFact))
+            uiManager.ShowPopup(data.keyFact);
     }
 
-    void ApplySettings()
+    private void ApplyEnvironmentSettings()
     {
-        // ⚠️ Gravedad: asegúrate que no sea cero
-        if (data.gravity != 0)
-        {
+        // Gravedad
+        if (data.gravity > 0)
             Physics.gravity = Vector3.down * data.gravity;
-        }
         else
         {
             Debug.LogWarning("PlanetManager: gravedad no válida, usando 9.81 por defecto.");
             Physics.gravity = Vector3.down * 9.81f;
         }
 
-        // 🌌 Skybox
+        // Skybox
         if (data.skybox != null)
-        {
             RenderSettings.skybox = data.skybox;
-        }
         else
-        {
             Debug.Log("PlanetManager: sin skybox asignado.");
-        }
 
-        // 🌫️ Fog color
-        RenderSettings.fogColor = data.fogColor;  // puede dejarse así porque el Color nunca es null
+        // Fog color
+        RenderSettings.fogColor = data.fogColor;
 
-        // 🔊 Sonido ambiental
-        GameObject ambientObj = GameObject.Find("AmbientAudio");
-        if (ambientObj != null)
+        // Audio ambiental
+        var ambientSource = GetComponent<AudioSource>();
+        if (data.ambientAudio != null)
         {
-            AudioSource ambient = ambientObj.GetComponent<AudioSource>();
-            if (ambient != null)
-            {
-                if (data.ambientAudio != null)
-                {
-                    ambient.clip = data.ambientAudio;
-                    ambient.Play();
-                }
-                else
-                {
-                    Debug.Log("PlanetManager: sin audio ambiental asignado.");
-                }
-            }
-            else
-            {
-                Debug.LogWarning("PlanetManager: AmbientAudio no tiene AudioSource.");
-            }
+            ambientSource.clip = data.ambientAudio;
+            ambientSource.loop = true;
+            ambientSource.Play();
         }
         else
         {
-            Debug.LogWarning("PlanetManager: no se encontró objeto 'AmbientAudio' en la escena.");
+            Debug.Log("PlanetManager: sin audio ambiental asignado.");
         }
+    }
+
+    // Llamar cuando recolectes una muestra
+    public void OnCollectSample(Sprite icon, string description)
+    {
+        uiManager.AddLogEntry(icon, description);
+        uiManager.ShowPopup(description);
+    }
+
+    // Llamar al cambiar stats del jugador
+    public void OnPlayerStatsChanged(float oxygen, float suitTemp, float radiation, string state)
+    {
+        uiManager.UpdatePlayer(oxygen, suitTemp, radiation, state);
     }
 }
