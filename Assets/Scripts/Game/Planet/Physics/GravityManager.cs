@@ -8,7 +8,12 @@ public class GravityManager : MonoBehaviour
 
     void Start()
     {
-        // Ajusta la gravedad global de Unity al valor del planeta
+        if (planetData == null)
+        {
+            Debug.LogWarning("GravityManager: no PlanetData asignado");
+            return;
+        }
+        // Ajusta la gravedad global de Unity
         Physics.gravity = Vector3.down * planetData.gravity;
     }
 }
