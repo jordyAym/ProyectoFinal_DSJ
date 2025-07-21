@@ -1,5 +1,5 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿// Assets/Scripts/Game/Player/AstronautPlayer.cs
+using UnityEngine;
 
 namespace AstronautPlayer
 {
@@ -7,10 +7,10 @@ namespace AstronautPlayer
     public class AstronautPlayer : MonoBehaviour
     {
         [Header("Movement Settings")]
-        public float walkSpeed = 6.0f;
-        public float runSpeed = 12.0f;
-        public float jumpHeight = 2.0f;       // Altura deseada en metros
-        public float rotationSpeed = 10.0f;
+        public float walkSpeed = 6f;
+        public float runSpeed = 12f;
+        public float jumpHeight = 2f;   // Altura deseada en metros
+        public float rotationSpeed = 10f;
 
         [Header("Ground Check")]
         public Transform groundCheck;
@@ -23,13 +23,16 @@ namespace AstronautPlayer
         private bool isGrounded;
         private Camera playerCamera;
 
-        void Start()
+        void Awake()
         {
             controller = GetComponent<CharacterController>();
+        }
+
+        void Start()
+        {
             anim = GetComponentInChildren<Animator>();
             playerCamera = Camera.main;
 
-            // Crear groundCheck si no existe
             if (groundCheck == null)
             {
                 var go = new GameObject("GroundCheck");
@@ -37,22 +40,17 @@ namespace AstronautPlayer
                 go.transform.localPosition = new Vector3(0, -1f, 0);
                 groundCheck = go.transform;
             }
+
+            // Debug opcional: comprobar que la gravedad global ya está bien
+            Debug.Log($"AstronautPlayer: Physics.gravity.y = {Physics.gravity.y} m/s²");
         }
 
         void Update()
         {
-            // 1) Ground Check
-            isGrounded = Physics.CheckSphere(
-                groundCheck.position,
-                groundDistance,
-                groundMask
-            );
-
+            // 1) Ground check
+            isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
             if (isGrounded && velocity.y < 0f)
-            {
-                // Mantiene contacto con el suelo
                 velocity.y = -2f;
-            }
 
             // 2) Movimiento horizontal
             float h = Input.GetAxisRaw("Horizontal");
@@ -63,10 +61,8 @@ namespace AstronautPlayer
             Vector3 dir;
             if (playerCamera != null)
             {
-                var f = playerCamera.transform.forward;
-                var r = playerCamera.transform.right;
-                f.y = 0; r.y = 0;
-                f.Normalize(); r.Normalize();
+                var f = playerCamera.transform.forward; f.y = 0; f.Normalize();
+                var r = playerCamera.transform.right; r.y = 0; r.Normalize();
                 dir = f * v + r * h;
             }
             else
@@ -76,32 +72,27 @@ namespace AstronautPlayer
 
             if (dir.magnitude >= 0.1f)
             {
-                dir.Normalize();
-                controller.Move(dir * speed * Time.deltaTime);
+                controller.Move(dir.normalized * speed * Time.deltaTime);
                 anim.SetInteger("AnimationPar", isRunning ? 2 : 1);
 
-                // Rotación suave hacia la dirección de movimiento
+                // Rotación suave
                 var targetRot = Quaternion.LookRotation(dir);
-                transform.rotation = Quaternion.Slerp(
-                    transform.rotation,
-                    targetRot,
-                    rotationSpeed * Time.deltaTime
-                );
+                transform.rotation = Quaternion.Slerp(transform.rotation, targetRot, rotationSpeed * Time.deltaTime);
             }
             else
             {
                 anim.SetInteger("AnimationPar", 0);
             }
 
-            // 3) Salto (usa la fórmula v = √(2·g·h))
+            // 3) Salto
             if (Input.GetButtonDown("Jump") && isGrounded)
             {
-                float g = -Physics.gravity.y;  // gravedad positiva
+                float g = -Physics.gravity.y; // gravedad positiva
                 velocity.y = Mathf.Sqrt(2f * g * jumpHeight);
                 anim.SetTrigger("Jump");
             }
 
-            // 4) Aplicar gravedad global
+            // 4) Aplicar gravedad
             velocity.y += Physics.gravity.y * Time.deltaTime;
             controller.Move(velocity * Time.deltaTime);
         }
