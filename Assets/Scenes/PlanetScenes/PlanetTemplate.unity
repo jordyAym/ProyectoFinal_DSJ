@@ -523,7 +523,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 253534424}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.052376196, y: 0.944718, z: -0.26376995, w: 0.18759048}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.5802631, y: 3.7346292, z: 3.6357512}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -542,9 +542,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 036f7dcabd9944343aec7d56821fdd7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lookAt: {fileID: 1145719673}
-  camTransform: {fileID: 253534425}
-  distance: 5
+  target: {fileID: 1145719673}
+  distance: 4
+  height: 1.5
+  smoothSpeed: 10
+  mouseSensitivity: 2
+  minYAngle: -60
+  maxYAngle: 60
+  enableCameraCollision: 1
+  collisionLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  minDistance: 1
 --- !u!81 &253534427
 AudioListener:
   m_ObjectHideFlags: 0
@@ -725,7 +734,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 129801711}
   m_HandleRect: {fileID: 129801710}
   m_Direction: 0
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -1444,6 +1453,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 564968381}
   m_CullTransparentMesh: 1
+--- !u!1 &565149740
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 565149741}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &565149741
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565149740}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.000036, y: -0.000211, z: -0.001217}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1145719673}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &565474608
 GameObject:
   m_ObjectHideFlags: 0
@@ -3495,7 +3535,8 @@ Transform:
   m_LocalPosition: {x: 0.05378515, y: 1.144495, z: -0.31659797}
   m_LocalScale: {x: 1000, y: 1000, z: 1000}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 565149741}
   m_Father: {fileID: 1693500662}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!137 &1145719674
@@ -4247,6 +4288,7 @@ GameObject:
   - component: {fileID: 1442785742}
   - component: {fileID: 1442785743}
   - component: {fileID: 1442785744}
+  - component: {fileID: 1442785745}
   m_Layer: 0
   m_Name: PlanetManager
   m_TagString: Untagged
@@ -4379,6 +4421,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1442785745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1442785741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cb8d97bbbc868a46ba5f7419c302ade, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planetData: {fileID: 11400000, guid: 174bb62f31b3bbc418c741ef63f06d86, type: 2}
 --- !u!1 &1453588587
 GameObject:
   m_ObjectHideFlags: 0
@@ -5507,6 +5562,7 @@ GameObject:
   - component: {fileID: 1693500665}
   - component: {fileID: 1693500664}
   - component: {fileID: 1693500663}
+  - component: {fileID: 1693500666}
   m_Layer: 0
   m_Name: Stylized Astronaut
   m_TagString: Untagged
@@ -5544,9 +5600,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51c7b5abfedd4e741bef70712caf60fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 7
-  turnSpeed: 300
-  gravity: 20
+  walkSpeed: 6
+  runSpeed: 12
+  jumpHeight: 8
+  rotationSpeed: 10
+  groundCheck: {fileID: 565149741}
+  groundDistance: 0.4
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 1
 --- !u!143 &1693500664
 CharacterController:
   m_ObjectHideFlags: 0
@@ -5594,6 +5656,33 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!54 &1693500666
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1693500661}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1694864883
 GameObject:
   m_ObjectHideFlags: 0

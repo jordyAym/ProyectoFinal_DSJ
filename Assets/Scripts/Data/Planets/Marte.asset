@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Marte
   m_EditorClassIdentifier: 
   planetName: Marte
-  gravity: 7
+  gravity: 10
   averageTemperature: 20
   dayLength: 10
   atmosphereStatus: 3
