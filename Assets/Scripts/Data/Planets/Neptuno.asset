@@ -9,11 +9,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: df60bf2b1d548454b947b874ba1a96b9, type: 3}
   m_Name: Neptuno
   m_EditorClassIdentifier: Assembly-CSharp::PlanetData
   planetName: Neptuno
   gravity: 11.15
+  averageTemperature: -200
+  dayLength: 16.1
+  atmosphereStatus: 3
+  radiationLevel: 150
   skybox: {fileID: 0}
-  fogColor: {r: 0.23339976, g: 0.27506632, b: 0.8415094, a: 0}
+  fogColor: {r: 0.27450982, g: 0.50980395, b: 0.7058824, a: 0}
   ambientAudio: {fileID: 0}
+  keyFact: 
