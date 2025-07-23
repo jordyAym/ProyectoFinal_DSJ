@@ -14,6 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   planetName: Venus
   gravity: 8.87
-  skybox: {fileID: 0}
-  fogColor: {r: 0.381132, g: 0.3581764, b: 0.10571019, a: 0}
+  averageTemperature: 92
+  dayLength: 464
+  atmosphereStatus: 2802.0
+  radiationLevel: 50
+  skybox: {fileID: 2100000, guid: 72deae4d18418f94688abef8e8483df0, type: 2}
+  fogColor: {r: 1, g: 0.39215687, b: 0.78431374, a: 0}
   ambientAudio: {fileID: 0}
+  keyFact: "Un d\xEDa en Venus dura m\xE1s que su a\xF1o y su atm\xF3sfera aplasta
+    con una presi\xF3n 92 veces mayor que la de la Tierra."
