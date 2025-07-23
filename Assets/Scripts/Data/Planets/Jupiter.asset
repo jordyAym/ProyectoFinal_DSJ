@@ -9,11 +9,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: df60bf2b1d548454b947b874ba1a96b9, type: 3}
   m_Name: Jupiter
   m_EditorClassIdentifier: Assembly-CSharp::PlanetData
   planetName: Jupiter
   gravity: 24.79
+  averageTemperature: -110
+  dayLength: 9.9
+  atmosphereStatus: 5
+  radiationLevel: 300
   skybox: {fileID: 0}
-  fogColor: {r: 0.4566037, g: 0.4530258, b: 0.38509783, a: 0}
+  fogColor: {r: 0.8235294, g: 0.7058824, b: 0.54901963, a: 0}
   ambientAudio: {fileID: 0}
+  keyFact: "Es el planeta m\xE1s grande del sistema solar y tiene una gran mancha
+    roja.\n\n"

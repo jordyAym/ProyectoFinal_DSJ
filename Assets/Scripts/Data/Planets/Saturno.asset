@@ -14,6 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   planetName: Saturno
   gravity: 10.44
+  averageTemperature: -140
+  dayLength: 10.7
+  atmosphereStatus: 4
+  radiationLevel: 250
   skybox: {fileID: 0}
   fogColor: {r: 0.94716984, g: 0.90587753, b: 0.52719826, a: 0}
   ambientAudio: {fileID: 0}
+  keyFact: 

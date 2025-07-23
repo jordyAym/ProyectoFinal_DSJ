@@ -13,7 +13,13 @@ MonoBehaviour:
   m_Name: Marte
   m_EditorClassIdentifier: 
   planetName: Marte
-  gravity: 7
-  skybox: {fileID: 0}
-  fogColor: {r: 0.9547169, g: 0.27920952, b: 0.27920952, a: 0}
+  gravity: 3.71
+  averageTemperature: -63
+  dayLength: 24.6
+  atmosphereStatus: 0.006
+  radiationLevel: 210
+  skybox: {fileID: 2100000, guid: 5d133deeaa66ed445853e946ff25e073, type: 2}
+  fogColor: {r: 0.7882353, g: 0.39607844, b: 0.23921569, a: 0}
   ambientAudio: {fileID: 0}
+  keyFact: "Marte alberga el volc\xE1n m\xE1s grande del sistema solar y tormentas
+    de polvo que pueden envolver todo el planeta."
