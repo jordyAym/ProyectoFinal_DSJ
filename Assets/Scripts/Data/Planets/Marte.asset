@@ -20,6 +20,6 @@ MonoBehaviour:
   radiationLevel: 210
   skybox: {fileID: 2100000, guid: 5d133deeaa66ed445853e946ff25e073, type: 2}
   fogColor: {r: 0.7882353, g: 0.39607844, b: 0.23921569, a: 0}
-  ambientAudio: {fileID: 0}
+  ambientAudio: {fileID: 8300000, guid: df81ff13b4e27490a97d74c1f325fe4e, type: 3}
   keyFact: "Marte alberga el volc\xE1n m\xE1s grande del sistema solar y tormentas
     de polvo que pueden envolver todo el planeta."

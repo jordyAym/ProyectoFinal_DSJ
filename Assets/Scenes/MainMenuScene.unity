@@ -1597,7 +1597,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -1.5, y: -42.1}
-  m_SizeDelta: {x: 160.6306, y: 30}
+  m_SizeDelta: {x: 200, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &949578966
 MonoBehaviour:
@@ -1642,7 +1642,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 949578967}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1621214532}
+        m_TargetAssemblyTypeName: ControladorDeOpciones, Assembly-CSharp
+        m_MethodName: cargarOpcion
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: GalaxyMapScene
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &949578967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2104,7 +2116,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Cargar Partida
+  m_text: Cargar Planeta
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: da78f18f64ac3404f9febca54712697a, type: 2}
   m_sharedMaterial: {fileID: -934242443456065199, guid: da78f18f64ac3404f9febca54712697a, type: 2}
@@ -2391,6 +2403,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &1621214531
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1621214533}
+  - component: {fileID: 1621214532}
+  m_Layer: 0
+  m_Name: UIManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1621214532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1621214531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 500d29e72c9f0744caf8edfc6b7aa62b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1621214533
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1621214531}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 423.8, y: 472, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1692058898
 GameObject:
   m_ObjectHideFlags: 0
@@ -2660,7 +2716,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Jugar
+  m_text: Navegar
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: da78f18f64ac3404f9febca54712697a, type: 2}
   m_sharedMaterial: {fileID: -934242443456065199, guid: da78f18f64ac3404f9febca54712697a, type: 2}
@@ -3197,7 +3253,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -1.5, y: 2}
-  m_SizeDelta: {x: 80, y: 30}
+  m_SizeDelta: {x: 200, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2006377558
 MonoBehaviour:
@@ -3363,5 +3419,6 @@ SceneRoots:
   - {fileID: 434645316}
   - {fileID: 1541096939}
   - {fileID: 1966096015}
+  - {fileID: 1621214533}
   - {fileID: 1878464297}
   - {fileID: 168535668}

@@ -20,6 +20,6 @@ MonoBehaviour:
   radiationLevel: 0.2
   skybox: {fileID: 2100000, guid: 3e5399bd195de7649b874f58c1b9f8a3, type: 2}
   fogColor: {r: 0.5294118, g: 0.80784315, b: 0.92156863, a: 0}
-  ambientAudio: {fileID: 0}
+  ambientAudio: {fileID: 8300000, guid: df81ff13b4e27490a97d74c1f325fe4e, type: 3}
   keyFact: "La Tierra es el \xFAnico planeta conocido con vida y una abundante cantidad
     de agua l\xEDquida en su superficie."

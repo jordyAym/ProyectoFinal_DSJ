@@ -20,5 +20,5 @@ MonoBehaviour:
   radiationLevel: 250
   skybox: {fileID: 0}
   fogColor: {r: 0.94716984, g: 0.90587753, b: 0.52719826, a: 0}
-  ambientAudio: {fileID: 0}
+  ambientAudio: {fileID: 8300000, guid: df81ff13b4e27490a97d74c1f325fe4e, type: 3}
   keyFact: 

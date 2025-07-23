@@ -20,6 +20,6 @@ MonoBehaviour:
   radiationLevel: 670
   skybox: {fileID: 2100000, guid: f531e09e2ad2fb440b4eed7605863143, type: 2}
   fogColor: {r: 0, g: 0, b: 0, a: 0}
-  ambientAudio: {fileID: 0}
+  ambientAudio: {fileID: 8300000, guid: df81ff13b4e27490a97d74c1f325fe4e, type: 3}
   keyFact: "Mercurio tiene un amanecer cada 176 d\xEDas y su superficie alcanza hasta
     427\u202F\xB0C sin atm\xF3sfera que lo proteja."

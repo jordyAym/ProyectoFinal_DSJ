@@ -5306,7 +5306,7 @@ MonoBehaviour:
   planetData: {fileID: 11400000, guid: 93dd21ccfc7e18e4a8fb3be21748bac8, type: 2}
   timeMultiplier: 1000
   minSunIntensity: 0.2
-  minAmbientIntensity: 0.316
+  minAmbientIntensity: 0.352
   clockText: {fileID: 1683744426}
 --- !u!1 &1608611152
 GameObject:

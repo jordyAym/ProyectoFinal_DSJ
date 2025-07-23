@@ -20,6 +20,6 @@ MonoBehaviour:
   radiationLevel: 300
   skybox: {fileID: 2100000, guid: 2039a0ad0a9d05549928b70362f54902, type: 2}
   fogColor: {r: 0.8235294, g: 0.7058824, b: 0.54901963, a: 0}
-  ambientAudio: {fileID: 0}
+  ambientAudio: {fileID: 8300000, guid: df81ff13b4e27490a97d74c1f325fe4e, type: 3}
   keyFact: "Es el planeta m\xE1s grande del sistema solar y tiene una gran mancha
     roja.\n\n"
