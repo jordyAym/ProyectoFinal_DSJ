@@ -5170,7 +5170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0202f43aa4b58ca40b39bbcc3eb1b96d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planetData: {fileID: 11400000, guid: 174bb62f31b3bbc418c741ef63f06d86, type: 2}
+  planetData: {fileID: 11400000, guid: ff3d544074f0caa439755028f24b70ad, type: 2}
   timeMultiplier: 200
   minSunIntensity: 0.2
   minAmbientIntensity: 0.2

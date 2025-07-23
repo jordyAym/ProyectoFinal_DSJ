@@ -5303,10 +5303,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0202f43aa4b58ca40b39bbcc3eb1b96d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planetData: {fileID: 11400000, guid: 174bb62f31b3bbc418c741ef63f06d86, type: 2}
-  timeMultiplier: 200
+  planetData: {fileID: 11400000, guid: 93dd21ccfc7e18e4a8fb3be21748bac8, type: 2}
+  timeMultiplier: 1000
   minSunIntensity: 0.2
-  minAmbientIntensity: 0.2
+  minAmbientIntensity: 0.316
   clockText: {fileID: 1683744426}
 --- !u!1 &1608611152
 GameObject:

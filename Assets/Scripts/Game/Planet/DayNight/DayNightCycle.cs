@@ -10,11 +10,11 @@ public class DayNightCycle : MonoBehaviour
 
     [Header("Control de Tiempo")]
     [Tooltip("1 = tiempo real; >1 acelera el ciclo")]
-    public float timeMultiplier = 60f;
+    public float timeMultiplier = 1000f;
 
     [Header("Mínimos nocturnos")]
     [Range(0f, 1f)] public float minSunIntensity = 0.2f;
-    [Range(0f, 1f)] public float minAmbientIntensity = 0.2f;
+    [Range(0f, 1f)] public float minAmbientIntensity = 0.35f;
 
     [Header("UI Reloj")]
     [Tooltip("Arrastra aquí tu componente TextMeshProUGUI del reloj")]
