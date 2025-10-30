@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/GalaxyMapScene.unity
+    guid: 1e51d087da93bee4ab6369a1345165ba
+  - enabled: 1
     path: Assets/Scenes/PlanetScenes/Jupiter_Scene.unity
     guid: 24a86ac29e656e14188e3f169249fae1
   - enabled: 1
