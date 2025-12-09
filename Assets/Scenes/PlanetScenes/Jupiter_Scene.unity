@@ -185,7 +185,7 @@ Transform:
   m_GameObject: {fileID: 12813349}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -32.8, y: 1, z: -2.1}
+  m_LocalPosition: {x: -32.8, y: 2, z: -2.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3536,6 +3536,7 @@ GameObject:
   m_Component:
   - component: {fileID: 680188039}
   - component: {fileID: 680188040}
+  - component: {fileID: 680188041}
   m_Layer: 0
   m_Name: Demon_damaged
   m_TagString: Untagged
@@ -3581,6 +3582,27 @@ MonoBehaviour:
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 0
+--- !u!65 &680188041
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 680188038}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &700696824
 GameObject:
   m_ObjectHideFlags: 0
@@ -10782,7 +10804,7 @@ Transform:
   m_GameObject: {fileID: 1761579200}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 22.76, y: 0, z: 11.3}
+  m_LocalPosition: {x: 22.76, y: 0.5, z: 11.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11950,7 +11972,7 @@ Transform:
   m_GameObject: {fileID: 2021257630}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 26.9, y: 0, z: -25.4}
+  m_LocalPosition: {x: 26.9, y: 0.7, z: -25.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
