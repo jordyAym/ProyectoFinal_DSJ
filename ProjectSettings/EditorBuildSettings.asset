@@ -31,7 +31,11 @@ EditorBuildSettings:
     guid: bbc1710853185d14ca2812a6228ccfcc
   - enabled: 1
     path: Assets/Scenes/PlanetScenes/Urano_Scene.unity
+<<<<<<< HEAD
     guid: a16ad5508a409fa4a94c4d9e3f35c0b6
+=======
+    guid: b47ad7a70d0fe3249ad3af13b67df857
+>>>>>>> 8d1aee9963470f42ecdd1bed4d18ef7b0e7088ed
   - enabled: 1
     path: Assets/Scenes/PlanetScenes/Venus_Scene.unity
     guid: 03fbcf170e272e94cadff236a09af814

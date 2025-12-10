@@ -70,7 +70,11 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
+<<<<<<< HEAD
     - _Exposure: 0.9671194
+=======
+    - _Exposure: 0.9407692
+>>>>>>> 8d1aee9963470f42ecdd1bed4d18ef7b0e7088ed
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
