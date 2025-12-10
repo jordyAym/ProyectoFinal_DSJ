@@ -1,0 +1,56 @@
+# === Unity generated folders ===
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+[Uu]ser[Ss]ettings/
+[Hh]otReload/
+
+# === Rider/VSCode/VisualStudio ===
+.vscode/
+.idea/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+ExportedObj/
+.consulo/
+
+# === MacOS / Windows system files ===
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# === Unity package/Android/iOS builds ===
+*.apk
+*.aab
+*.unitypackage
+*.app
+*.exe
+
+# === Crashlytics ===
+crashlytics-build.properties
+
+# === Unity Version Control / Plastic SCM ===
+.plastic/
+.plasticworkspace
+
+# === JetBrains Rider plugin ===
+Assets/Plugins/Editor/JetBrains*
